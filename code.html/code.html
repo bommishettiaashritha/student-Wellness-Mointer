@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Wellness Monitor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #e3f5ff 0%, #ffffff 100%);
+      color: #232d3e;
+    }
+    header {
+      background: #82c4ec;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0 0 0;
+    }
+    nav a {
+      color: #232d3e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      max-width: 600px;
+      margin: 3rem auto;
+      background: #f5fafc;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(130,196,236,0.22);
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.6rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #4777aa;
+      margin-bottom: 1.2rem;
+    }
+    .cta-btn {
+      background: #4777aa;
+      color: #fff;
+      padding: 0.9em 2.2em;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 1px 2px 8px rgba(39,62,105,0.12);
+    }
+    .features {
+      max-width: 820px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.4rem;
+    }
+    .feature-card {
+      background: #eaf6fb;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(39,62,105,0.06);
+    }
+    .feature-card h3 {
+      color: #4777aa;
+      margin-top: 0;
+    }
+    footer {
+      background: #82c4ec;
+      color: #fff;
+      text-align: center;
+      padding: 1.2rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Student Wellness Monitor</h2>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#signup">Sign Up</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Your Daily Path to Wellness</h1>
+    <p>Track your mood, receive personalized wellness tips, and visualize your emotional trends over time. Designed for students, guided by science.</p>
+    <a href="#signup"><button class="cta-btn">Get Started</button></a>
+  </section>
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>Daily Mood Check-Ins</h3>
+      <p>Log how you feel each day and spot patterns in your emotional wellbeing.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Sentiment Analysis</h3>
+      <p>Gain insights into your feelings with smart sentiment tracking from journal entries.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Personalized Wellness Recommendations</h3>
+      <p>Receive tailored tips, exercises, and resources matched to your needs.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Trend Visualization</h3>
+      <p>View graphs and charts to see your progress and emotional trends over time.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure & Private</h3>
+      <p>Your data is protected and confidential, so you can share honestly and safely.</p>
+    </div>
+  </section>
+  <section class="hero" id="signup">
+    <h2>Ready to Start Your Wellness Journey?</h2>
+    <p>Sign up in seconds and begin taking charge of your mental health.</p>
+    <form>
+      <input type="email" placeholder="Enter your student email" required style="padding: 0.7em 1em; border-radius: 5px; border: 1px solid #4777aa;">
+      <button class="cta-btn" type="submit">Sign Up</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Student Wellness Monitor. All rights reserved.
+  </footer>
+</body>
+</html>
